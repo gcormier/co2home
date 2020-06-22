@@ -1,0 +1,36 @@
+esphome:
+  name: co2buddy
+  platform: ESP32
+  board: esp32dev
+
+wifi:
+  ssid: "yourssid"
+  password: "yourwifi"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Alarmbuddy Fallback Hotspot"
+    password: "x9iGij4DZIB"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+uart:
+  rx_pin: D0
+  tx_pin: D1
+  baud_rate: 9600
+
+sensor:
+  - platform: mhz19
+    co2:
+      name: "MH-Z19 CO2 Value"
+    temperature:
+      name: "MH-Z19 Temperature"
+    update_interval: 60s
+    automatic_baseline_calibration: true
