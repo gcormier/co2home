@@ -13,101 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:R_Small R2
-U 1 1 5C07A008
-P 5850 1300
-F 0 "R2" H 5791 1254 50  0000 R CNN
-F 1 "100k" H 5791 1345 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 5850 1300 50  0001 C CNN
-F 3 "~" H 5850 1300 50  0001 C CNN
-	1    5850 1300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5500 1950 6150 1950
-$Comp
-L power:GND #PWR016
-U 1 1 5C086020
-P 6150 2150
-F 0 "#PWR016" H 6150 1900 50  0001 C CNN
-F 1 "GND" H 6155 1977 50  0000 C CNN
-F 2 "" H 6150 2150 50  0001 C CNN
-F 3 "" H 6150 2150 50  0001 C CNN
-	1    6150 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5C08607D
-P 6150 2050
-F 0 "R3" H 6209 2096 50  0000 L CNN
-F 1 "100k" H 6209 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 6150 2050 50  0001 C CNN
-F 3 "~" H 6150 2050 50  0001 C CNN
-	1    6150 2050
-	1    0    0    -1  
-$EndComp
 Text Label 5600 1850 0    50   ~ 0
 TXD
 Text Label 5600 2050 0    50   ~ 0
 RXD
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5C11B0C7
-P 6050 1650
-F 0 "SW2" H 6050 1850 50  0000 C CNN
-F 1 "FLASH" H 6050 1750 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 6050 1650 50  0001 C CNN
-F 3 "" H 6050 1650 50  0001 C CNN
-	1    6050 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR014
-U 1 1 5C121F30
-P 5850 1200
-F 0 "#PWR014" H 5850 1050 50  0001 C CNN
-F 1 "+3V3" H 5865 1373 50  0000 C CNN
-F 2 "" H 5850 1200 50  0001 C CNN
-F 3 "" H 5850 1200 50  0001 C CNN
-	1    5850 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 1750 5850 1750
-$Comp
-L power:GND #PWR017
-U 1 1 5C16CDAC
-P 6250 1700
-F 0 "#PWR017" H 6250 1450 50  0001 C CNN
-F 1 "GND" H 6255 1527 50  0000 C CNN
-F 2 "" H 6250 1700 50  0001 C CNN
-F 3 "" H 6250 1700 50  0001 C CNN
-	1    6250 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 1650 6250 1700
-Wire Wire Line
-	5850 1750 5850 1650
-Text Label 2775 4300 0    50   ~ 0
-TXD
-Text Label 2775 4500 0    50   ~ 0
-RXD
-$Comp
-L power:GND #PWR01
-U 1 1 5C182F1A
-P 2675 4500
-F 0 "#PWR01" H 2675 4250 50  0001 C CNN
-F 1 "GND" H 2680 4327 50  0000 C CNN
-F 2 "" H 2675 4500 50  0001 C CNN
-F 3 "" H 2675 4500 50  0001 C CNN
-	1    2675 4500
-	1    0    0    -1  
-$EndComp
-Text Notes 2775 4150 0    50   ~ 0
-Programming
 $Comp
 L power:+3V3 #PWR011
 U 1 1 5C18FF49
@@ -142,17 +51,6 @@ F 3 "~" H 3950 1300 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Switch:SW_SPST SW1
-U 1 1 5C2D591C
-P 3750 1750
-F 0 "SW1" H 3750 1985 50  0000 C CNN
-F 1 "ENABLE" H 3750 1894 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 3750 1750 50  0001 C CNN
-F 3 "" H 3750 1750 50  0001 C CNN
-	1    3750 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR09
 U 1 1 5C2D5923
 P 3950 1200
@@ -165,19 +63,6 @@ F 3 "" H 3950 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 1750 3950 1750
-$Comp
-L power:GND #PWR08
-U 1 1 5C2D592C
-P 3550 1800
-F 0 "#PWR08" H 3550 1550 50  0001 C CNN
-F 1 "GND" H 3555 1627 50  0000 C CNN
-F 2 "" H 3550 1800 50  0001 C CNN
-F 3 "" H 3550 1800 50  0001 C CNN
-	1    3550 1800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 1750 3550 1800
 $Comp
 L Device:C_Small C3
 U 1 1 5C32A69A
@@ -227,7 +112,7 @@ U 1 1 5C148A17
 P 2800 5800
 F 0 "J2" H 2800 6250 50  0000 C CNN
 F 1 "USB_B_Micro" H 2800 6150 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 2950 5750 50  0001 C CNN
+F 2 "!Greg:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 2950 5750 50  0001 C CNN
 F 3 "~" H 2950 5750 50  0001 C CNN
 	1    2800 5800
 	1    0    0    -1  
@@ -262,43 +147,12 @@ NoConn ~ 5500 4050
 NoConn ~ 5500 3950
 Text Notes 5550 4050 0    35   ~ 0
 34/35 are\ninput only
-Connection ~ 3950 1750
 Wire Wire Line
 	3950 1400 3950 1750
-Wire Wire Line
-	5850 1650 5850 1400
-Connection ~ 5850 1650
 NoConn ~ 5500 2350
 Text Notes 4600 2550 0    39   ~ 0
 Bootstrap GPIO's\n0, 2, 5, 12, 15
 NoConn ~ 5500 3850
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5C732064
-P 3125 4400
-F 0 "J1" H 3204 4442 50  0000 L CNN
-F 1 "SERIAL" H 3204 4351 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3125 4400 50  0001 C CNN
-F 3 "~" H 3125 4400 50  0001 C CNN
-	1    3125 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2925 4300 2775 4300
-Wire Wire Line
-	2925 4400 2675 4400
-Wire Wire Line
-	2675 4400 2675 4500
-Wire Wire Line
-	2775 4500 2925 4500
-Wire Notes Line
-	2575 4200 3475 4200
-Wire Notes Line
-	3475 4200 3475 4750
-Wire Notes Line
-	3475 4750 2575 4750
-Wire Notes Line
-	2575 4750 2575 4200
 NoConn ~ 5500 3650
 NoConn ~ 5500 2650
 Wire Wire Line
@@ -445,9 +299,81 @@ U 1 1 5EF11B8C
 P 5850 5400
 F 0 "U1" H 5650 5750 50  0000 C CNN
 F 1 "MH-Z19" H 6050 5750 50  0000 C CNN
-F 2 "" H 5850 5400 50  0001 C CNN
+F 2 "!Greg:MH-Z19" H 5850 5400 50  0001 C CNN
 F 3 "" H 5850 5400 50  0001 C CNN
 	1    5850 5400
 	1    0    0    -1  
 $EndComp
+$Comp
+L !Custom:esp32buddy J1
+U 1 1 5F0674EB
+P 1750 4550
+F 0 "J1" H 1818 4025 50  0000 C CNN
+F 1 "esp32buddy" H 1818 4116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1750 4550 50  0001 C CNN
+F 3 "~" H 1750 4550 50  0001 C CNN
+	1    1750 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F06B7BE
+P 2000 4750
+F 0 "#PWR0101" H 2000 4500 50  0001 C CNN
+F 1 "GND" H 2005 4577 50  0000 C CNN
+F 2 "" H 2000 4750 50  0001 C CNN
+F 3 "" H 2000 4750 50  0001 C CNN
+	1    2000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4750 2000 4750
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5F06C6CD
+P 2350 4150
+F 0 "#PWR0103" H 2350 4000 50  0001 C CNN
+F 1 "+3V3" H 2365 4323 50  0000 C CNN
+F 2 "" H 2350 4150 50  0001 C CNN
+F 3 "" H 2350 4150 50  0001 C CNN
+	1    2350 4150
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1750 0    50   ~ 0
+GPIO0
+Wire Wire Line
+	5500 1750 5600 1750
+Text Label 4150 1750 2    50   ~ 0
+EN
+Text Label 2050 4350 0    50   ~ 0
+EN
+Text Label 2050 4250 0    50   ~ 0
+GPIO0
+Text Label 2050 4550 0    50   ~ 0
+RXD
+Text Label 2050 4650 0    50   ~ 0
+TXD
+Wire Wire Line
+	1950 4450 2350 4450
+Wire Wire Line
+	2350 4450 2350 4150
+Wire Wire Line
+	1950 4350 2050 4350
+Wire Wire Line
+	2050 4250 1950 4250
+Wire Wire Line
+	1950 4650 2050 4650
+Wire Wire Line
+	2050 4550 1950 4550
+Wire Notes Line
+	1350 3900 2550 3900
+Wire Notes Line
+	2550 3900 2550 5050
+Wire Notes Line
+	2550 5050 1350 5050
+Wire Notes Line
+	1350 5050 1350 3900
+Text Notes 1350 3900 0    50   ~ 0
+Programming
+NoConn ~ 5500 1950
 $EndSCHEMATC
