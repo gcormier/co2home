@@ -1,11 +1,12 @@
+# You MUST remove MH-Z19 before flashing over serial or it will fail to flash
 esphome:
   name: co2buddy
   platform: ESP32
   board: esp32dev
 
 wifi:
-  ssid: "yourssid"
-  password: "yourwifi"
+  ssid: "yourwifi"
+  password: "yourpassword"
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -16,21 +17,21 @@ captive_portal:
 
 # Enable logging
 logger:
-
+  baud_rate: 0
 # Enable Home Assistant API
 api:
 
 ota:
 uart:
-  rx_pin: D0
-  tx_pin: D1
+  rx_pin: 3
+  tx_pin: 1
   baud_rate: 9600
 
 sensor:
   - platform: mhz19
     co2:
-      name: "MH-Z19 CO2 Value"
+      name: "Basement CO2 Value"
     temperature:
-      name: "MH-Z19 Temperature"
+      name: "Basement Temperature"
     update_interval: 60s
-    automatic_baseline_calibration: true
+    #automatic_baseline_calibration: true
