@@ -1,6 +1,8 @@
 # co2home
 This device interfaces with an MH-Z19B and makes the data available in home assistant via esphome. It could also work with any other software you'd like on an ESP32.
 
+Phyiscally, this should also work with the Senseair S8 as it has the same pinouts. ESPHome provides a <a href="https://esphome.io/components/sensor/senseair.html">different block</a> to work with this.
+
 <img src="docs/co2home-1.jpg" width="20%"/>
 <img src="docs/co2home-2.png" width="60%"/>
 
@@ -14,6 +16,6 @@ I've found now that 10 minutes an hour is not quite enough ERV time with the CFM
 Overkill, sure, but hey, why not?
 
 ## Programming
-You MUST remove the MH-Z19B to perform any serial flashing with a programmer. Doing OTA updates is not an issue; the sensor can be left attached.
+You MUST remove the sensor module to perform any serial flashing with a programmer. Doing OTA updates is not an issue; the sensor can be left attached.
 
 The programming header can work with any esp32 programmer if wired up correctly. The pinout matches my esp32 programmer, <a href="https://github.com/gcormier/eflashy32/">eflashy32</a> if you are in need of a programmer as well.
