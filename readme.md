@@ -6,6 +6,10 @@ Phyiscally, this should also work with the Senseair S8 as it has the same pinout
 <img src="docs/co2home-1.jpg" width="20%"/>
 <img src="docs/co2home-2.png" width="60%"/>
 
+## Store
+If you are interested in a fully built version I sell them on my tindie store, <a href="https://www.tindie.com/products/gcormier/co2home/">Greg's Tinker Town</a>
+
+
 ## Narrative
 With COVID hitting and basically spending the tail end of Winter and a lot of spring indoors 24x7, I really wanted to check out the indoor air quality. My house does have an ERV, but it was basically a guessing game. No matter how efficient an ERV/HRV is, there is still a penalty to pay. I wanted a way to quantify the levels to adjust my HRV accordingly.
 
