@@ -1,6 +1,6 @@
 # You MUST remove MH-Z19 before flashing over serial or it will fail to flash
 esphome:
-  name: co2buddy
+  name: co2home
   platform: ESP32
   board: esp32dev
 
@@ -10,8 +10,8 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Alarmbuddy Fallback Hotspot"
-    password: "x9iGij4DZIB"
+    ssid: "co2home Fallback"
+    password: "co2home"
 
 captive_portal:
 
@@ -30,8 +30,8 @@ uart:
 sensor:
   - platform: mhz19
     co2:
-      name: "Basement CO2 Value"
+      name: "CO2home Value"
     temperature:
-      name: "Basement Temperature"
+      name: "CO2home Temperature"
     update_interval: 60s
     #automatic_baseline_calibration: true
