@@ -1,7 +1,9 @@
 # co2home
-This device interfaces with an MH-Z19B and makes the data available in home assistant via esphome. It could also work with any other software you'd like on an ESP32.
+This device interfaces with an MH-Z19 and makes the data available in home assistant via esphome. It could also work with any other software you'd like on an ESP32. It is powered and programmed via a USB-C port.
 
 Phyiscally, this should also work with the Senseair S8 as it has the same pinouts. ESPHome provides a <a href="https://esphome.io/components/sensor/senseair.html">different block</a> to work with this.
+
+There may be other clones out there as well such as the SYP50-A-5K.
 
 <img src="docs/co2home-1.jpg" width="20%"/>
 <img src="docs/co2home-2.png" width="60%"/>
@@ -20,6 +22,6 @@ I've found now that 10 minutes an hour is not quite enough ERV time with the CFM
 Overkill, sure, but hey, why not?
 
 ## Programming
-You MUST remove the sensor module to perform any serial flashing with a programmer. Doing OTA updates is not an issue; the sensor can be left attached.
+The new revision uses an ESP32-C3-MINI-1 which has native USB support. This means the code can be flashed via USB. The first time this is done, you must HOLD the button while plugging in the USB-C cable to force it in programming mode. Flash using `esphome` or any other flasher. Any subsequent flashes do not need any button pushes.
 
-The programming header can work with any esp32 programmer if wired up correctly. The pinout matches my esp32 programmer, <a href="https://github.com/gcormier/eflashy32/">eflashy32</a> if you are in need of a programmer as well.
+As a backup, there is a programming header - the pinout matches my esp32 programmer, <a href="https://github.com/gcormier/eflashy32/">eflashy32</a> if you are in need of a programmer as well.
