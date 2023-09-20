@@ -48,7 +48,13 @@
           "min_clearance": 0.254
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -168,9 +174,26 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
+        0.3,
+        0.4,
+        0.6,
         0.8
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.4
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -385,7 +408,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
