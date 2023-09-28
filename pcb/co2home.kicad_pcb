@@ -1017,11 +1017,6 @@
       (net 21 "PWM") (pinfunction "Pin_7") (pintype "passive") (tstamp 842cdde7-d650-40fd-acf4-ff6b60a60b06))
     (pad "MP" smd roundrect (at -8.35 2.9) (size 1.5 3.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.166667) (tstamp bad56e8f-355a-42a9-ae3a-b02f54d0aa46))
     (pad "MP" smd roundrect (at 8.35 2.9) (size 1.5 3.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.166667) (tstamp 231b69ae-379d-4f9a-a7f7-538bc7334aca))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_S7B-PH-SM4-TB_1x07-1MP_P2.00mm_Horizontal.wrl"
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     (model "${KIPRJMOD}/S7B-PH-SM4-TB.STEP"
       (offset (xyz -17.9 12.6 0))
       (scale (xyz 1 1 1))
