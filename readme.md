@@ -1,3 +1,5 @@
+<a href="https://www.tindie.com/products/gcormier/esphome-humitemp/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
 # co2home
 This device interfaces with an MH-Z19 and makes the data available in home assistant via esphome. It could also work with any other software you'd like on an ESP32. It is powered and programmed via a USB-C port.
 
@@ -8,8 +10,6 @@ There may be other clones out there as well such as the SYP50-A-5K.
 <img src="docs/co2home-1.jpg" width="20%"/>
 <img src="docs/co2home-2.png" width="60%"/>
 
-## Store
-If you are interested in a fully built version I sell them on my tindie store, <a href="https://www.tindie.com/products/gcormier/co2home/">Greg's Tinker Town</a>
 
 
 ## Narrative
